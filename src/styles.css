@@ -1,0 +1,28 @@
+
+body {
+    background-color: #b3b6b6f1;
+    color:rgb(34, 33, 33);
+}
+.bg-dark {
+    background-color: #424242 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:#fff;
+    padding:1rem 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-item:hover {
+    color:#fff;
+    background-color: #212121;
+}
+.navbar {
+    padding:0;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.form-control, .btn, .input-group-text {
+    border-radius: 0;
+}

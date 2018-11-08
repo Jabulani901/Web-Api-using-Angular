@@ -1,0 +1,48 @@
+.bg-light-grey {
+    background-color:  #f6f4f7fb;
+}
+.country-view .input-group-text {
+    background-color: #362a3a81;
+    color:rgb(54, 43, 43);
+    border-color: #dce5e6ee;
+    border-right-width:0;
+}
+
+.country-view select {
+    background-color: #46354b;
+    color:#fff;
+    border-color: #f1eaea;
+    border-left-width:0;
+}
+
+.country-view select:focus {
+    background-color: #575258;
+    color:#fff;
+    border-color: #212121;
+}
+.country-view input.form-control {
+    background-color: #616161;
+    color:#fff;
+    border-color: #212121;
+}
+.country-view .btn-dark {
+    background-color: #424242;
+    border-color: #212121;
+    transition: all 0.3s ease-in-out;
+}
+.country-view .btn-dark:hover {
+background-color: #616161;
+transition: all 0.3s ease-in-out;
+}
+::placeholder {
+    color:#fff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color:#fff;
+}
+
+::-ms-input-placeholder {
+    color:#fff;
+}

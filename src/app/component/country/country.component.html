@@ -1,0 +1,47 @@
+<div class="container bg-light-grey country-view">
+  <div class="row">
+    <div class="col">
+      <h3 class="mt-3 mb-3">Country View</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-4">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Please select Sport:</span>
+        </div>
+        <select [(ngModel)]="sportId" name="sportId" (change)="GetSportId(sportId)">
+          <option *ngFor="let value of Sports" [value]="value.sportId">{{value.sportName}}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <div class="input-group mb-3">
+        <input type="text" [(ngModel)]="countryName" class="form-control" placeholder="Country name...">
+        <div class="input-group-append">
+          <button class="btn btn-dark" type="button" (click)="AddCountry(countryName,sportId)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="input-group">
+    <table>
+      <td>
+        <ul *ngIf="country">
+          <li *ngFor="let sport of country">Sport: {{sport.sportName}} | Country: {{sport.countryName}}
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Edit Country....." aria-label="Recipient's username"
+                #newCountry>
+              <div class="input-group-append">
+                <button class="btn btn-success btn-outline-green" type="button" (click)="editCountry(sport,newCountry.value)">Edit</button>
+                <button class="btn btn-danger btn-outline-red" type="button" (click)="removeCountry(sport)">Delete</button>
+              </div>
+            </div>
+            <hr>
+          </li>
+        </ul>​
+      </td>
+    </table>
+  </div>
+</div>

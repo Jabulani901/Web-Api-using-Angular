@@ -1,0 +1,95 @@
+<div class="container bg-light-grey country-view">
+    <div class="row">
+      <div class="col">
+        <h3 class="mt-3 mb-3">Event View</h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Please select Sport:</span>
+            </div>
+            <select type="number" [(ngModel)]="sportId" (ngModelChange)="findSportID()">
+              <option *ngFor="let sport of Sports" [ngValue]="sport.sportId"> {{sport.sportName}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Please select Country:</span>
+            </div>
+            <select *ngIf="SportCountry != []" type="number" [(ngModel)]="countryId" (ngModelChange)="findCountryTournamentID()">
+              <option *ngFor="let sptCountry of SportCountry" [ngValue]="sptCountry.countryId">{{sptCountry.countryName}}</option>
+            </select>
+          </div>
+        </div>
+      <div class="col-sm-12 col-lg-4">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Please select Tournament:</span>
+          </div>
+          <select *ngIf="tournamentCountry != []" type="number" [(ngModel)]="tId" (ngModelChange)="findTournamentID()">
+              <option *ngFor="let trn of tournamentCountry" [ngValue]="trn.tId">{{trn.tName}}</option>
+            </select>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-sm-12 col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <input  type="datetime-local" #newDate>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Event name..."#addEvents>
+          <div class="input-group-append">
+            <button class="btn btn-dark" type="button" (click)="addEvent(addEvents.value, tId,newDate.value)">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="input-group">
+      <table>
+        <td>
+          <ul *ngIf="events">
+            <li *ngFor="let ev of events">Event Name: {{ev.eventName}} | Tournament: {{ev.tName}} | Country: {{ev.countryName}} | Sport: {{ev.sportName}} | date:{{ev.dateH}}
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Edit Event....." aria-label="Recipient's username" #newEvent>
+                <input  type="datetime-local" #newupdate>
+                <div class="input-group-append">
+                  <button class="btn btn-success btn-outline-green" type="button" (click)="editEvent(newEvent.value, ev.eventId,newupdate.value)">Edit</button>
+                  <button class="btn btn-danger btn-outline-red" type="button" (click)="deleteEvent(ev)">Delete</button>
+                </div>
+              </div>
+              <hr>
+            </li>
+          </ul>​
+        </td>
+      </table>
+    </div>
+</div>
+
+
+<!-- 
+<div class="container">
+    <h3>Event View</h3>
+    <select *ngIf="tournament != []" class="ml-sm-5 mb-4" type="number" [(ngModel)]="tId" (ngModelChange)="findTournamentID()">
+      <option *ngFor="let trn of tournament" [ngValue]="trn.tId">{{trn.tName}}</option>
+    </select>
+         <input type="text" placeholder="Add Event...." #addEvents/>
+         <input class="col-sm-2 mb-4" type="date" #newDate>
+        <button class="btn btn-success" (click)="addEvent(addEvents.value, tId,newDate.value)">Add Event</button>
+        <table>
+         <td><ul *ngIf="events">
+            <li *ngFor="let ev of events">{{ev.eventName}}<td><button (click)="deleteEvent(ev)" type="button" class="btn btn-danger">Delete</button></td> 
+             <td><button (click)="editEvent(newEvent.value,ev.eventId)" class="btn btn-dark">Edit</button></td>
+            <td><input type="text" class="text" placeholder="Edit Event...." #newEvent/></td><hr>
+            </li>
+          </ul>​</td>
+        </table>
+     </div> -->
