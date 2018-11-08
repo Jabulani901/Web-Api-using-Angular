@@ -1,0 +1,14 @@
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\bin\Debug\netcoreapp2.1\SportGame.deps.json
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\bin\Debug\netcoreapp2.1\SportGame.runtimeconfig.json
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\bin\Debug\netcoreapp2.1\SportGame.runtimeconfig.dev.json
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\bin\Debug\netcoreapp2.1\SportGame.dll
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.csproj.CoreCompileInputs.cache
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.RazorAssemblyInfo.cache
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.RazorAssemblyInfo.cs
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.AssemblyInfoInputs.cache
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.AssemblyInfo.cs
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.RazorTargetAssemblyInfo.cache
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\bin\Debug\netcoreapp2.1\SportGame.pdb
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.csprojAssemblyReference.cache
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.dll
+C:\Users\JabulaniT\source\repos\SportGame\SportGame\obj\Debug\netcoreapp2.1\SportGame.pdb
